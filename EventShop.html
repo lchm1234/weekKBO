@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+	
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.mobile-1.4.5.js"></script>
+	<script>
+
+    //쿠키설정    
+
+    function setCookie( name, value, expiredays )
+
+    {
+
+    var todayDate = new Date();
+
+    todayDate.setDate( todayDate.getDate() + expiredays );
+
+    document.cookie = name + '=' + escape( value ) + '; path=/; expires=' + todayDate.toGMTString() + ';'
+
+    }
+
+ 
+
+    //쿠키 불러오기
+
+    function getCookie(name) 
+
+    { 
+
+        var obj = name + "="; 
+
+        var x = 0; 
+
+        while ( x <= document.cookie.length ) 
+
+        { 
+
+            var y = (x+obj.length); 
+
+            if ( document.cookie.substring( x, y ) == obj ) 
+
+            { 
+
+                if ((endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) 
+
+                    endOfCookie = document.cookie.length;
+
+                return unescape( document.cookie.substring( y, endOfCookie ) ); 
+
+            } 
+
+            x = document.cookie.indexOf( " ", x ) + 1; 
+
+            if ( x == 0 ) 
+
+                break; 
+
+        } 
+
+        return ""; 
+
+    }
+
+        
+
+    //닫기 버튼 클릭시
+
+    function closeWin(key)
+
+    {
+
+        if($("#todaycloseyn").prop("checked"))
+
+        {
+
+            setCookie('divpop'+key, 'Y' , 1 );
+
+        }
+
+        $("#divpop"+key+"").hide();
+
+    }
+
+  
+
+    $(function(){    
+
+ 
+
+        if(getCookie("divpop1") !="Y"){
+
+            $("#divpop1").show();
+
+        }
+
+ 
+
+    });
+
+</script>
+
+
+
+	<style>
+		.Info{
+			text-align:center;
+			font-size:11px;
+		}
+		 .divpop {
+		 	border:1px solid black;
+		 	position: absolute; z-index:999; top:13%; left:4%;
+		 	width:50%; background-color:#FCFCFC; display:none;
+		  }
+	</style>
+</head>
+<body>
+	<section data-role="page">
+		<header style="background-color:#FFFFFF;" data-role="header"><h1>위클리 크보</h1>
+			<div data-role="navbar" data-grid="d">
+				<ul>
+					<li><a style="font-size:10px;" data-ajax='false' href="Main.html" data-theme="b">Home</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="WeeklyTeam.html" data-theme="b">위클리 팀</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="WeeklyRecord.html" data-theme="b">위클리 기록</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="Dictionary.html" data-theme="b">용어 사전</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="#" data-theme="b" class="ui-btn-active">위클리 SALE</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="content" data-role="content">
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<div>
+						<a href="http://twinsgoods.co.kr/product/detail.html?product_no=102&cate_no=68&display_group=1">
+							<img src="AD1.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">28,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>18,000</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>트윈스 플레이어 스탠드</strong></p>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div>
+						<a href="http://www.kbomarket.com/goods/goods_view.php?goodsNo=1000001163&mtn=50%5E%7C%5ENC+%EC%96%B4%EC%84%BC%ED%8B%B1%EC%9D%98%EB%A5%98%5E%7C%5Ey">
+							<img src="AD2.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">49,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>39,200</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>다이노스 어센틱 훈련복</strong></p>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div>
+						<a href="http://www.halfclub.com/Detail?PrstCd=5724692161120&ColorCd=ZZ9&NaPm=ct%3Dkbnn2pco%7Cci%3D8c6a275c895bd2e0e963df8a16922f37452e7f32%7Ctr%3Dsls%7Csn%3D270%7Chk%3Df95a6296678c482129bdad0f83af334b11d4e6c7">
+							<img src="AD3.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">19,900</del>&nbsp;->&nbsp;<span style="color:red;"><strong>18,310</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>슈펜X프로야구 수리 슬리퍼</strong></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<div>
+						<a href="http://www.kbomarket.com/goods/goods_view.php?goodsNo=1000001088&mtn=48%5E%7C%5E%EA%B8%B0%EC%95%84+%EC%96%B4%EC%84%BC%ED%8B%B1%EC%83%81%ED%92%88%5E%7C%5Ey">
+							<img src="AD4.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">39,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>31,200</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>타이거즈 어센틱 경기모</strong></p>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div>
+						<a href="http://sports1004.com/product/detail.html?product_no=31675&cate_no=1696&display_group=1&cafe_mkt=naver_ks&mkt_in=Y&ghost_mall_id=naver&ref=naver_open&NaPm=ct%3Dkbnng1ag%7Cci%3D94c747c04b76c50aaa2c2cce8973a47e7af18d69%7Ctr%3Dsls%7Csn%3D196388%7Chk%3D5613124cdb8ddfb5bcdc5d5807463349af5644f5">
+							<img src="AD5.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">39,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>29,000</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>라이온즈 넥밴드 선풍기</strong></p>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div>
+						<a href="http://shopping.interpark.com/product/productInfo.do?prdNo=5578414186&dispNo=001780002008">
+							<img src="AD6.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">15,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>10,500</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>베어스 리본 머리띠</strong></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<div>
+						<a href="https://www.coupang.com/vp/products/1460991663?itemId=2513663668&vendorItemId=70506670664&q=kt+wiz&itemsCount=36&searchId=e7f942ffed4749b68f9d6285b6285c36&rank=9&isAddedCart=">
+							<img src="AD7.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">25,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>7,000</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>위즈 극세사 무릎담요</strong></p>
+					</div>
+				</div>
+				<div class="ui-block-b">
+					<div>
+						<a href="https://www.coupang.com/vp/products/239871435?itemId=763108615&vendorItemId=4924665744&pickType=COU_PICK&q=%EB%A1%AF%EB%8D%B0%EC%9E%90%EC%9D%B4%EC%96%B8%EC%B8%A0&itemsCount=36&searchId=aad4d2b33e384fd394284994beffe7f3&rank=0&isAddedCart=">
+							<img src="AD8.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">15,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>13,900</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>자이언츠 슬리퍼</strong></p>
+					</div>
+				</div>
+				<div class="ui-block-c">
+					<div>
+						<a href="https://www.coupang.com/vp/products/1504757964?itemId=2583496007&vendorItemId=70575710710&q=SK+%EB%A1%9C%EA%B3%A0%EB%B3%BC&itemsCount=22&searchId=3de2524fd62241bf968f7b38ebefe40b&rank=4&isAddedCart=">
+							<img src="AD9.jpg" width="95%">
+						</a>
+					</div>
+					<div class="Info">
+						<p><del style="color:#BDBDBD;">45,000</del>&nbsp;->&nbsp;<span style="color:red;"><strong>29,000</strong></span></p>
+						<p style="font-family:sans-serif; font-size:12px;"><strong>와이번스 대형 로고볼</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form name="notice_form">
+		    <div id="divpop1" class="divpop">
+		    	<header style="font-size:17px;background-color:#1266FF; color:white; text-align:center;"><p><strong>공지사항</strong></p></header>
+		    	<article>
+			    	<p style="font-size:13px;">원하시는 상품의 <strong>이미지 클릭 시</strong> 해당 상품의 <strong>구매처</strong>로 이동합니다.</p>
+			    	<p style="font-size:13px;">상품 품목은 매주 <strong>월요일</strong> 마다 변경됩니다.</p>
+			    	<p style="font-size:13px;">본 페이지 에서는 <strong>SALE이 적용된 상품</strong>의 정보만 업로드됩니다.</p>
+			    	<p style="font-size:13px;">여러 구단 팬 분들이 이용하실 수 있게 되도록 <strong>다양한 구단</strong>의 세일 정보를 업로드 하겠습니다.</p>
+			    	<br/>
+			    	<p style="font-size:11px;"><span style="color:red;"><strong>광고문의</strong></span> : abcd1234@naver.com (이형욱)</p>
+		    	</article>
+
+
+		    	<footer style="background-color:#1266FF; color:white;">
+		             <input type='checkbox' name='chkbox' id='todaycloseyn' value='Y' style="width:6%;margin-left:66%; margin-top:0.1px"><span style=";font-size:13px;">1일 동안 이 창을 열지 않음</span>
+		             <a href='#' style="float:right; color:white; font-size:13px; margin-top:3px; margin-right:4%"onclick="javascript:closeWin(1);"><B>[닫기]</B></a>
+		         </footer>
+
+		    </div>
+
+		</form>
+		<footer style="background-color:#FFFFFF;"data-role="footer">
+			<p style="text-align:center;"><strong><span style="color:#1266FF;">Made by </span> Hyeong-Uk</strong></p>
+		</footer>
+	</section>
+	</section>
+</body>
+</html>

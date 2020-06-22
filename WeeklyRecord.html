@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+	
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.mobile-1.4.5.js"></script>
+	<style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+		th, td {
+		  padding: 15px;
+		}
+		#Title1 {
+			background-color:#1266FF;
+			color:white;
+			border-right: 2px solid black;
+		}
+		#Title2 {
+			background-color:#1266FF;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<section data-role="page">
+		<header style="background-color:#FFFFFF;" data-role="header"><h1>위클리 크보</h1>
+			<div data-role="navbar" data-grid="d">
+				<ul>
+					<li><a style="font-size:10px;" data-ajax='false' href="Main.html" data-theme="b">Home</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="WeeklyTeam.html" data-theme="b">위클리 팀</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="#" data-theme="b" class="ui-btn-active">위클리 기록</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="Dictionary.html" data-theme="b">용어 사전</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="EventShop.html" data-theme="b">위클리 SALE</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="content" data-role="content">
+			<div data-role="collapsible-set">
+				<div data-inset="true" data-role="collapsible" data-mini="true" data-iconpos="right" data-collapsed="false">
+					<h4>2020년 6월 3주 주간기록</h4>
+					<table style="width:100%; font-size:8px; text-align:center;">
+					  <tr style="border:2px solid black;">
+					    <th id="th1" rowspan="5" style="border-bottom: 2px solid black; border-right: 2px solid black;">개인기록</th>
+					    <th id="Title1">선 수 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">주효상</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">2연속 대타끝내기(6.19)</td>
+					    		<td>1호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">손아섭</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 300 2루타(6.20)</td>
+					    		<td>25호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">정우람</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 170세이브(6.20)</td>
+					    		<td>7호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					   <tr style="border-bottom: 2px solid black; border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">박석민</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 2400루타(6.20)</td>
+					    		<td>34호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <th rowspan="3" style="border: 2px solid black;">팀기록</th>
+					    <th id="Title1">팀 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">롯데자이언츠</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 4,3000안타(6.19)</td>
+					    		<td>4호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black; border-bottom: 2px solid black;">
+					    <td style="border-right: 2px solid black;">삼성라이온즈</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 2,600홈런(6.21)</td>
+					    		<td>1호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					</table>
+				</div>
+
+				<div  data-inset="true" data-role="collapsible" data-mini="true" data-iconpos="right">
+					<h4>2020년 6월 2주 주간기록</h4>
+					<table style="width:100%; font-size:8px; text-align:center;">
+					  <tr style="border:2px solid black;">
+					    <th id="th1" rowspan="7" style="border-bottom: 2px solid black; border-right: 2px solid black;">개인기록</th>
+					    <th id="Title1">선 수 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">유한준</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 2,100루타(6.9)</td>
+					    		<td>47호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">양의지</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 150홈런(6.9)</td>
+					    		<td>49호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">전준우</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1,200안타(6.10)</td>
+					    		<td>67호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					   <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">최정</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 3,000루타(6.11)</td>
+					    		<td>17호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">최정</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1,100타점(6.14)</td>
+					    		<td>11호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-bottom: 2px solid black; border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">박석민</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 800타점(6.14)</td>
+					    		<td>36호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <th rowspan="5" style="border: 2px solid black;">팀기록</th>
+					    <th id="Title1">팀 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">삼성라이온즈</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 4,700홈런(6.11)</td>
+					    		<td>1호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">기아타이거즈</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 64,000루타(6.12)</td>
+					    		<td>2호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">두산베어스</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 11,000세이브(6.12)</td>
+					    		<td>3호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-bottom: 2px solid black; border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">롯데자이언츠</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 4,100세이브(6.14)</td>
+					    		<td>5호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					</table>
+				</div>
+
+				<div data-inset="true" data-role="collapsible" data-mini="true" data-iconpos="right">
+					<h4>2020년 6월 1주 주간기록</h4>
+					<table style="width:100%; font-size:8px; text-align:center;">
+					  <tr style="border:2px solid black;">
+					    <th id="th1" rowspan="11" style="border-bottom: 2px solid black; border-right: 2px solid black;">개인기록</th>
+					    <th id="Title1">선 수 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">이대호</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 3,000루타(6.2)</td>
+					    		<td>16호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">황재균</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1,500안타(6.2)</td>
+					    		<td>36호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">양현종</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 140승(6.3)</td>
+					    		<td>5호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">정근우</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 2,600루타(6.3)</td>
+					    		<td>27호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">이성열</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1,000안타(6.3)</td>
+					    		<td>98호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">김재환</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 150홈런(6.4)</td>
+					    		<td>48호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					   <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">황재균</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 200도루(6.5)</td>
+					    		<td>21호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					   <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">안치홍</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 600타점(6.5)</td>
+					    		<td>63호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">김태균</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 3,500타점(6.6)</td>
+					    		<td>4호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">박병호</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 600 4구(6.6)</td>
+					    		<td>40호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <th rowspan="5" style="border: 2px solid black;">팀기록</th>
+					    <th id="Title1">팀 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">롯데자이언츠</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 2200승(6.5)</td>
+					    		<td>5호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">키움히어로즈</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 1,600홈런(6.5)</td>
+					    		<td>9호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">키움히어로즈</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 11,000탈삼진(6.5)</td>
+					    		<td>9호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-bottom: 2px solid black; border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">롯데자이언츠</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 22,000탈삼진(6.6)</td>
+					    		<td>4호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  
+					</table>
+				</div>
+
+				<div data-inset="true" data-role="collapsible" data-mini="true" data-iconpos="right">
+					<h4>2020년 5월 4주 주간기록</h4>
+					<table style="width:100%; font-size:8px; text-align:center;">
+					  <tr style="border:2px solid black;">
+					    <th id="th1" rowspan="7" style="border-bottom: 2px solid black; border-right: 2px solid black;">개인기록</th>
+					    <th id="Title1">선 수 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">이용규</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 350도루(5.27)</td>
+					    		<td>9호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">김선빈</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1,000안타(5.27)</td>
+					    		<td>98호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">나성범</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 150홈런(5.28)</td>
+					    		<td>47호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">김혜성</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">시이클링히트(5.30)</td>
+					    		<td>26호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">강민호</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 900타점(5.30)</td>
+					    		<td>27호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">안치홍</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1200안타(5.31)</td>
+					    		<td>66호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <th rowspan="2" style="border: 2px solid black;">팀기록</th>
+					    <th id="Title1">팀 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <td style="border-right: 2px solid black;">LG트윈스</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 43,000안타(5.27)</td>
+					    		<td>3호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  
+					</table>
+				</div>
+
+				<div data-inset="true" data-role="collapsible" data-mini="true" data-iconpos="right">
+					<h4>2020년 5월 3주 주간기록</h4>
+					<table style="width:100%; font-size:8px; text-align:center;">
+					  <tr style="border:2px solid black;">
+					    <th id="th1" rowspan="5" style="border-bottom: 2px solid black; border-right: 2px solid black;">개인기록</th>
+					    <th id="Title1">선 수 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">박용택</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 3,600루타(5.21)</td>
+					    		<td>3호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">나지완</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 600득점(5.21)</td>
+					    		<td>72호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">박병호</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 2,100루타(5.23)</td>
+					    		<td>46호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					   <tr style="border-bottom: 2px solid black; border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">이용규</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 700 4구(5.24)</td>
+					    		<td>25호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <th rowspan="4" style="border: 2px solid black;">팀기록</th>
+					    <th id="Title1">팀 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">삼성라이온즈</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 4,200도루(5.20)</td>
+					    		<td>3호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">NC다이노스</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 1,000홈런(5.21)</td>
+					    		<td>10호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-bottom: 2px solid black; border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">두산베어스</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 2,100타점(5.22)</td>
+					    		<td>2호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					</table>
+				</div>
+
+				<div data-inset="true" data-role="collapsible" data-mini="true" data-iconpos="right">
+					<h4>2020년 5월 2주 주간기록</h4>
+					<table style="width:100%; font-size:8px;  text-align:center;">
+					  <tr style="border:2px solid black;">
+					    <th id="th1" rowspan="7" style="border-bottom: 2px solid black; border-right: 2px solid black;">개인기록</th>
+					    <th id="Title1">선 수 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">박해민</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 250 도루(5.12)</td>
+					    		<td>17호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">김현수</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 2,500루타(5.12)</td>
+					    		<td>33호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">김상수</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1,100안타(5.12)</td>
+					    		<td>33호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">김현수</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 700 4구(5.14)</td>
+					    		<td>24호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">오재일</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 500 타점(5.14)</td>
+					    		<td>95호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border-bottom: 2px solid black; border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">민병헌</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 1,200 안타(5.15)</td>
+					    		<td>65호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					</table>
+				</div>
+
+				<div data-inset="true" data-role="collapsible" data-mini="true" data-iconpos="right">
+					<h4>2020년 5월 1주 주간기록</h4>
+					<table style="width:100%; font-size:8px; text-align:center;">
+					  <tr style="border:2px solid black;">
+					    <th id="th1" rowspan="4" style="border-bottom: 2px solid black; border-right: 2px solid black;">개인기록</th>
+					    <th id="Title1">선 수 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">서폴드</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">외인 개막 완봉승(5.5)</td>
+					    		<td>1호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">한동민</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 100홈런(5.6)</td>
+					    		<td>95호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					  <tr style="border-right: 2px solid black;">
+					    <td style="border-right: 2px solid black;">오지환</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">통산 200 2루타(5.10)</td>
+					    		<td>73호</td>
+					    	</table>
+					    </td>				    
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <th rowspan="2" style="border: 2px solid black;">팀기록</th>
+					    <th id="Title1">팀 명</th>
+					    <th id="Title2">기 록</th>
+					  </tr>
+					  <tr style="border: 2px solid black;">
+					    <td style="border-right: 2px solid black;">롯데자이언츠</td>
+					    <td style="padding:1px">
+					    	<table style="width:100%">
+					    		<td style="width:70%;">팀 20,000타점(5.7)</td>
+					    		<td>5호</td>
+					    	</table>
+					    </td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<footer style="background-color:#FFFFFF;"data-role="footer">
+			<p style="text-align:center;"><strong><span style="color:#1266FF;">Made by </span> Hyeong-Uk</strong></p>
+		</footer>
+	</section>
+		
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+	
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.mobile-1.4.5.js"></script>
+	
+
+
+	<style>
+		.left {
+    		float: left;
+    		width: 40%;
+    		margin-right: 1%;
+    		margin-left:51%;
+    	}
+    	.right {
+    		float: right;
+    		width: 8%;
+    	}
+    	.ui-input-search {
+    		margin: 0;
+    		height:50%;
+    	}
+    	
+    	
+    	
+    </style>
+
+</head>
+<body>
+	<section data-role="page">
+		<header style="background-color:#FFFFFF;" data-role="header"><h1>위클리 SALE</h1>
+			<div data-role="navbar" data-grid="d">
+					<ul>
+						<li><a style="font-size:10px;" data-ajax='false' href="#" data-theme="b" class="ui-btn-active">Home</a></li>
+						<li><a style="font-size:10px;" data-ajax='false'href="WeeklyTeam.html" data-theme="b">위클리 팀</a></li>
+						<li><a style="font-size:10px;" data-ajax='false'href="WeeklyRecord.html" data-theme="b">위클리 기록</a></li>
+						<li><a style="font-size:10px;" data-ajax='false' href="Dictionary.html" data-theme="b">용어 사전</a></li>
+						<li><a style="font-size:10px;" data-ajax='false' href="EventShop.html" data-theme="b">이벤트Shop</a></li>
+					</ul>
+				</div>
+		</header>
+	
+		<div class="content" data-role="content">			
+			<div style="background-color:#1266FF;" class="ui-grid-solo ui-responsisve">
+				<div class="ui-block-a" data-iconpos="left">
+					<h3 style="text-align:center; color:white;">Today Big-match</h3>
+					<div style="background-color:white;"class="ui-grid-b">
+						<div style="text-align:center;" class="ui-block-a">
+							<img src="Heros.png" width="80%">
+							<p style="text-align:center; font-size:12px;"><strong>키움히어로즈<span style="font-size:10px;">(4위)</span></strong></p>
+							<p style="text-align:center; font-size:11px;">최원태</p>
+
+						</div>
+						<div class="ui-block-b">
+							<br/>
+							<h2 style="text-align:center; font-family:courier;">VS</h2>
+							<p style="text-align:center; font-size:8px; color:red;"><strong>승차 : -0.5</strong></p>
+						</div>
+						<div style="text-align:center;"class="ui-block-c">
+							<img src="Twins.png" width="80%">
+							<p style="text-align:center; font-size:12px;"><strong>LG트윈스<span style="font-size:10px;">(공동2위)</span></p>
+							<p style="text-align:center; font-size:11px;">김윤식</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/>
+
+			<div style="background-color:#1266FF;" class="ui-grid-a">
+            <div class="ui-block-a">
+                <h3 style="text-align:center; color:white">주간 Top3 타자</h3>
+                <div style="background-color:white; text-align:center;" class="ui-grid-b">
+                	<div class="ui-block-a">
+                		<p style="font-size:12px;"><strong>타율</strong></p>
+                		<img src="Machado.jpg" width="100%">
+                		<p style="font-size:11px;">마차도</p>
+                		<p style="font-size:11px;"><strong>0.560</strong></p>
+                	</div>
+                	<div class="ui-block-b">
+                		<p style="font-size:12px;"><strong>홈런</strong></p>
+                		<img src="Bakho.jpg" width="100%">
+                		<p style="font-size:11px;">강백호</p>
+                		<p style="font-size:11px;"><strong>3</strong></p>
+                	</div>
+                	<div style="border-right:1px dashed;"class="ui-block-c">
+                		<p style="font-size:12px;"><strong>타점</strong></p>
+                		<img src="Haesung.jpg" width="100%">
+                		<p style="font-size:11px;">국해성</p>
+                		<p style="font-size:11px;"><strong>8</strong></p>
+                	</div>
+                </div>
+            </div>
+
+            <div class="ui-block-b">
+                <h3 style="text-align:center; color:white;">주간 Top3 투수</h3>
+                <div style="background-color:white; text-align:center;" class="ui-grid-b">
+                	<div class="ui-block-a">
+                		<p style="font-size:12px;"><strong>승리</strong></p>
+                		<img src="Junpyo.jpg" width="100%">
+                		<p style="font-size:11px;">박준표</p>
+                		<p style="font-size:11px;"><strong>2</strong></p>
+                	</div>
+                	<div class="ui-block-b">
+                		<p style="font-size:12px;"><strong>세이브</strong></p>
+                		<img src="GyungChan.jpg" width="100%">
+                		<p style="font-size:11px;">문경찬</p>
+                		<p style="font-size:11px;"><strong>3</strong></p>
+                	</div>
+                	<div class="ui-block-c">
+                		<p style="font-size:12px;"><strong>홀드</strong></p>
+                		<img src="Sanghyun.jpg" width="100%">
+                		<p style="font-size:11px;">전상현</p>
+                		<p style="font-size:11px;"><strong>3</strong></p>
+                	</div>
+                </div>
+            </div>
+        </div>
+		<div data-role="collapsible" data-mini="true">
+			<h4>구단목록</h4>
+			<ul data-role="listview">
+				<li>
+					<a style="text-align:center; background-color:#050099;"data-ajax='false' href="NC_Dinos.html">
+						<h1 style="color:white;">NC다이노스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="NCwin" style="color:white; font-size:12px;">&nbsp;</span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="NCdraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="NClose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="NCW_R" style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#191919;" data-ajax='false' href="LG_Twins.html">
+						<h1 style="color:white;">LG트윈스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="LGwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="LGdraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="LGlose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="LGW_R"style="color:white; font-size:12px;"></span>
+							
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#000042;" data-ajax='false' href="DooSan_Bears.html">
+						<h1 style="color:white;">두산베어스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="Duwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="Dudraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="Dulose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="DuW_R" style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#99004C;" data-ajax='false' href="Kium_Heros.html">
+						<h1 style="color:white;">키움히어로즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="Kiwwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="Kiwdraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="Kiwlose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="KiwW_R"style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#FF0000;" data-ajax='false' href="Kia_Tigers.html">
+						<h1 style="color:white;">기아타이거즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="Kiwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="Kidraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="Kilose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="KiW_R"style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#00005D;" data-ajax='false' href="Lotte_Giants.html">
+						<h1 style="color:white;">롯데자이언츠&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="Lotwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="Lotdraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="Lotlose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="LotW_R" style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#3736FF;" data-ajax='false' href="Samsung_Lions.html">
+						<h1 style="color:white;">삼성라이온즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="samwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="samdraw" style="color:white; font-size:12px;">0</span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="samlose" style="color:white; font-size:12px;">5</span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="samW_R" style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#191919;" data-ajax='false' href="KT_Wiz.html">
+						<h1 style="color:white;">KT위즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="KTwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="KTdraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="KTlose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="KTW_R"style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#FF2424;" data-ajax='false' href="SK_Wyvenrs.html">
+						<h1 style="color:white;">SK와이번스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="SKwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="SKdraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="SKlose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="SKW_R"style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+				<li>
+					<a style="text-align:center; background-color:#FF8224;" data-ajax='false' href="Hanhwa_Eagles.html">
+						<h1 style="color:white;">한화이글스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span id="Hanwin" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">승</span>
+							<span id="Handraw" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">무</span>
+							<span id="Hanlose" style="color:white; font-size:12px;"></span>
+							<span style="color:white; font-size:12px;">패</span>
+							<span style="color:white; font-size:12px;">승률:</span>
+							<span id="HanW_R"style="color:white; font-size:12px;"></span>
+						</h1>
+					</a>
+				</li>
+			</ul>
+		</div>
+<script type="text/javascript">
+	sessionStorage.setItem('sam_win', 20);
+	sessionStorage.setItem('sam_lose', 22);
+	sessionStorage.setItem('sam_draw', 0);
+
+	sessionStorage.setItem('Lot_win', 20);
+	sessionStorage.setItem('Lot_lose', 21);
+	sessionStorage.setItem('Lot_draw', 0);
+
+	sessionStorage.setItem('Du_win', 25);
+	sessionStorage.setItem('Du_lose', 16);
+	sessionStorage.setItem('Du_draw', 0);
+
+	sessionStorage.setItem('Ki_win', 23);
+	sessionStorage.setItem('Ki_lose', 18);
+	sessionStorage.setItem('Ki_draw', 0);
+
+	sessionStorage.setItem('Kiw_win', 25);
+	sessionStorage.setItem('Kiw_lose', 17);
+	sessionStorage.setItem('Kiw_draw', 0);
+
+	sessionStorage.setItem('Han_win', 10);
+	sessionStorage.setItem('Han_lose', 32);
+	sessionStorage.setItem('Han_draw', 0);
+
+	sessionStorage.setItem('NC_win', 28);
+	sessionStorage.setItem('NC_lose', 12);
+	sessionStorage.setItem('NC_draw', 0);
+
+	sessionStorage.setItem('LG_win', 25);
+	sessionStorage.setItem('LG_lose', 16);
+	sessionStorage.setItem('LG_draw', 0);
+
+	sessionStorage.setItem('KT_win', 18);
+	sessionStorage.setItem('KT_lose', 23);
+	sessionStorage.setItem('KT_draw', 0);
+
+	sessionStorage.setItem('SK_win', 12);
+	sessionStorage.setItem('SK_lose', 29);
+	sessionStorage.setItem('SK_draw', 0);
+
+
+	function myFunction(Win, Draw, Lose) {
+	  var All = Win+Lose+Draw;
+	  return Win/(All-Draw);
+	}
+
+	var Sam_W = Number(sessionStorage.getItem('sam_win'));
+	var Sam_L = Number(sessionStorage.getItem('sam_lose'));
+	var Sam_D = Number(sessionStorage.getItem('sam_draw'));
+	document.getElementById("samwin").innerHTML = Sam_W;
+	document.getElementById("samdraw").innerHTML = Sam_D;
+	document.getElementById("samlose").innerHTML = Sam_L;
+	document.getElementById("samW_R").innerHTML = myFunction(Sam_W, Sam_D, Sam_L).toFixed(3);
+
+	var Lot_W = Number(sessionStorage.getItem('Lot_win'));
+	var Lot_L = Number(sessionStorage.getItem('Lot_lose'));
+	var Lot_D = Number(sessionStorage.getItem('Lot_draw'));
+	document.getElementById("Lotwin").innerHTML = Lot_W;
+	document.getElementById("Lotdraw").innerHTML = Lot_D;
+	document.getElementById("Lotlose").innerHTML = Lot_L;
+	document.getElementById("LotW_R").innerHTML = myFunction(Lot_W, Lot_D, Lot_L).toFixed(3);
+
+	var Du_W = Number(sessionStorage.getItem('Du_win'));
+	var Du_L = Number(sessionStorage.getItem('Du_lose'));
+	var Du_D = Number(sessionStorage.getItem('Du_draw'));
+	document.getElementById("Duwin").innerHTML = Du_W;
+	document.getElementById("Dudraw").innerHTML = Du_D;
+	document.getElementById("Dulose").innerHTML = Du_L;
+	document.getElementById("DuW_R").innerHTML = myFunction(Du_W, Du_D, Du_L).toFixed(3);
+
+	var Ki_W = Number(sessionStorage.getItem('Ki_win'));
+	var Ki_L = Number(sessionStorage.getItem('Ki_lose'));
+	var Ki_D = Number(sessionStorage.getItem('Ki_draw'));
+	document.getElementById("Kiwin").innerHTML = Ki_W;
+	document.getElementById("Kidraw").innerHTML = Ki_D;
+	document.getElementById("Kilose").innerHTML = Ki_L;
+	document.getElementById("KiW_R").innerHTML = myFunction(Ki_W, Ki_D, Ki_L).toFixed(3);
+
+	var Kiw_W = Number(sessionStorage.getItem('Kiw_win'));
+	var Kiw_L = Number(sessionStorage.getItem('Kiw_lose'));
+	var Kiw_D = Number(sessionStorage.getItem('Kiw_draw'));
+	document.getElementById("Kiwwin").innerHTML = Kiw_W;
+	document.getElementById("Kiwdraw").innerHTML = Kiw_D;
+	document.getElementById("Kiwlose").innerHTML = Kiw_L;
+	document.getElementById("KiwW_R").innerHTML = myFunction(Kiw_W, Kiw_D, Kiw_L).toFixed(3);
+
+	var NC_W = Number(sessionStorage.getItem('NC_win'));
+	var NC_L = Number(sessionStorage.getItem('NC_lose'));
+	var NC_D = Number(sessionStorage.getItem('NC_draw'));
+	document.getElementById("NCwin").innerHTML = NC_W;
+	document.getElementById("NCdraw").innerHTML = NC_D;
+	document.getElementById("NClose").innerHTML = NC_L;
+	document.getElementById("NCW_R").innerHTML = myFunction(NC_W, NC_D, NC_L).toFixed(3);
+
+	var Han_W = Number(sessionStorage.getItem('Han_win'));
+	var Han_L = Number(sessionStorage.getItem('Han_lose'));
+	var Han_D = Number(sessionStorage.getItem('Han_draw'));
+	document.getElementById("Hanwin").innerHTML = Han_W;
+	document.getElementById("Handraw").innerHTML = Han_D;
+	document.getElementById("Hanlose").innerHTML = Han_L;
+	document.getElementById("HanW_R").innerHTML = myFunction(Han_W, Han_D, Han_L).toFixed(3);
+
+	var LG_W = Number(sessionStorage.getItem('LG_win'));
+	var LG_L = Number(sessionStorage.getItem('LG_lose'));
+	var LG_D = Number(sessionStorage.getItem('LG_draw'));
+	document.getElementById("LGwin").innerHTML = LG_W;
+	document.getElementById("LGdraw").innerHTML = LG_D;
+	document.getElementById("LGlose").innerHTML = LG_L;
+	document.getElementById("LGW_R").innerHTML = myFunction(LG_W, LG_D, LG_L).toFixed(3);
+
+	var SK_W = Number(sessionStorage.getItem('SK_win'));
+	var SK_L = Number(sessionStorage.getItem('SK_lose'));
+	var SK_D = Number(sessionStorage.getItem('SK_draw'));
+	document.getElementById("SKwin").innerHTML = SK_W;
+	document.getElementById("SKdraw").innerHTML = SK_D;
+	document.getElementById("SKlose").innerHTML = SK_L;
+	document.getElementById("SKW_R").innerHTML = myFunction(SK_W, SK_D, SK_L).toFixed(3);
+
+	var KT_W = Number(sessionStorage.getItem('KT_win'));
+	var KT_L = Number(sessionStorage.getItem('KT_lose'));
+	var KT_D = Number(sessionStorage.getItem('KT_draw'));
+	document.getElementById("KTwin").innerHTML = KT_W;
+	document.getElementById("KTdraw").innerHTML = KT_D;
+	document.getElementById("KTlose").innerHTML = KT_L;
+	document.getElementById("KTW_R").innerHTML = myFunction(KT_W, KT_D, KT_L).toFixed(3);
+</script>
+		
+		<footer style="background-color:#FFFFFF;"data-role="footer">
+			<p style="text-align:center;"><strong><span style="color:#1266FF;">Made by </span> Hyeong-Uk</strong></p>
+		</footer>
+	</section>
+
+</body>
+</html>

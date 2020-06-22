@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+	
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+	<section data-role="page">
+		<header style="background-color:#FFFFFF;" data-role="header"><h1>위클리 크보</h1>
+			<div data-role="navbar" data-grid="d">
+				<ul>
+					<li><a style="font-size:10px;" data-ajax='false' href="Main.html" data-theme="b">Home</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="WeeklyTeam.html" data-theme="b">위클리 팀</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="WeeklyRecord.html" data-theme="b">위클리 기록</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="#" data-theme="b" class="ui-btn-active">용어 사전</a></li>
+					<li><a style="font-size:10px;" data-ajax='false' href="EventShop.html" data-theme="b">위클리 SALE</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="content" data-role="content">
+			<div data-role="collapsible-set" data-filter="true" data-filter-placeholder="Search..." data-inset="true">
+				<h3>초급 용어</h3>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>구속</h4>
+				       <h5>투수가 던지는 공의 빠르기.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>구원투수</h4>
+				       <h5> 선발 투수와 마무리 투수 사이에 중간의 이닝에 올라가서 던지는 투수. (마무리 까지 포함할 경우) 불펜이라고 표현 하기도 함.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>내야수</h4>
+				       <h5>야구 경기를 치를 때 필드 안쪽, 즉 내야 지역을 수비하는 선수를 통칭하는 말.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>대수비 & 대주자</h4>
+				       <h5>대수비는 야구에서 수비력 강화를 위해 주전 야수와 교체되어 투입되는 선수를 말함.<br/>
+				대주자는 루상에 주자가 있을 때 보다 쉽게 점수를 내기위해 발이 느린 주자를 대신해서 투입되는 요원.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>도루</h4>
+				       <h5>주루작전 가운데 하나로, 루상에 있는 주자가 다음 베이스로 가는 것이다. 일반적으로 투수가 타자에게 공을 던지는 순간에 주자가 다음 베이스를 훔친다.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>번트</h4>
+				       <h5>타자가 배트를 가로로 잡고, 투수가 던지는 공을 내야에 툭 떨어뜨리는 기술. 일반적으로 주자를 다음 베이스로 보내기 위해 자신을 희생하는 작전으로 많이 사용.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>병살</h4>
+				       <h5>한번의 타구로 아웃카운트가 두개 올라가는 경우를 뜻 함.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>사사구</h4>
+				       <h5>야구에서 볼넷과 몸에 맞는 공을 합쳐서 이르는 말. 사사구가 나올 시 타자는 1루로 진루.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>삼진</h4>
+				       <h5>야구에서 스트라이크를 세 번 당하는 것으로, 삼진아웃이란, 타자가 투수의 공을 못쳐서 아웃당한 '스트라이크 아웃'의 동양식 표현.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>세이브</h4>
+				       <h5>본인 팀이 3점 이하로 리드하고 있을 시 등판해 경기를 마무리 한 투수에게 주어지는 기록.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>스트라이크</h4>
+				       <h5>투수의 공이 타자가 칠 수 있는 존(스트라이크존) 안으로 들어온 공. 심판원이 스트라이크나 볼을 판정.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right" >
+				    <h4>실책</h4>
+				       <h5 data-filter="flase">야수가 정상적인 플레이였을 때 아웃시킬 수 있는 주자를 살리거나 진루를 막을 수 있을 주자의 진루를 허용할 경우 기록원이 결정하는 기록.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>아웃</h4>
+				       <h5>야구에서 경기 중에 타자나 주자가 그 자격을 잃는 것.</h5>
+				</div><div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>안타</h4>
+				       <h5>'안전 타격'의 준말로, 야구와 소프트볼에서 타자가 친 타구가 페어지역(파울라인 안쪽)에 떨어진 뒤 수비수의 실책 없이 1루 베이스에 도착한 것을 말함.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>이닝</h4>
+				       <h5>야구 또는 소프트볼에서 양팀이 한 번씩의 공격을 주고 받는 단위. 이닝이 모여 한 게임을 이룬다. 프로야구의 경우 9이닝.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>적시타</h4>
+				       <h5>적절한 시점에 나온 안타. 즉, 주자를 불러들여 점수를 낼 수 있게 만드는 안타를 뜻함.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>제구</h4>
+				       <h5> 투수가 원하는 곳에 공을 정확하게 던지는 능력.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>태그</h4>
+				       <h5>야수가 공을 가진 손 또는 글러브로 주자를 아웃시키기 위해 터치하는 행위. 공을 가지지 않은 손으로 터치 할 경우 무효.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>포일&폭투</h4>
+				       <h5>포일은 투수가 던진 공을 포수가 명백히 받을 수 있는 코스임에도 불구하고 미트에 맞고 빠진 경우를 가리키는 야구용어. 반대로 포수가 받을 수 없을 만한 공을 투수가 던지면 이는 폭투.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>홀드</h4>
+				       <h5>구원투수가 팀의 승리를 유지한 경우</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>홈런</h4>
+				       <h5>타자의 타구가 페어존(파울라인 안쪽)의 외야 담장을 넘어 간 경우. 타자는 모든 주자들과 함께 홈으로 들어 옴.</h5>
+				</div>
+				
+
+
+				<h3>중급 용어</h3>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>고의낙구</h4>
+				       <h5>뜬공을 수비수가 잡을 수 있음에도 병살플레이를 유도하기 위해 고의적으로 공을 떨었을 때 적용. 이 때 주심은 타자만 아웃을 선언하고 병살 플레이는 인정되지 않음.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>런다운</h4>
+				       <h5>주자가 다음 베이스로 진루하다가 수비수들에게 갇힌 상황.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>멀티히트</h4>
+				       <h5>한 타자가 한 경기에서 두 개의 안타를 기록함을 의미.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>밀어내기</h4>
+				       <h5>주자 만루에서 볼넷, 몸에 맞는 공, 타격방해 등이 발생하는 경우에 3루 주자는 득점하고 타자는 1타점을 얻는데 이를 밀어내기라고 함.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>배터리</h4>
+				       <h5>투수와 포수.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>보크</h4>
+				       <h5>투수가 루상에 주자가 있을 때 부정행위로 지정된 동작이나 행동을 취한 것. 루상에 있던 주자들이 한 베이스 씩 진루.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>백투백</h4>
+				       <h5>선행 타자가 홈런을 기록 한 후 다음 타자가 바로 홈런을 때린 경우를 백투백 홈런이라 하며 줄여서 백투백이라고 표현</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>블로킹</h4>
+				       <h5>포수가 바운드볼 등 잡기 힘든 폭투를 몸으로 막아내는 것.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>블론세이브</h4>
+				       <h5>세이브 조건에서 동점 혹은 역전을 허용한 경우 마운드에 있는 투수에게 주어지는 기록</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>삼자범퇴</h4>
+				       <h5>공격팀이 한 이닝동안 한 명도 출루를 하지 못한 상태로 3명의 타자가 모두 아웃되어 이닝이 끝나는 상황.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>완봉승</h4>
+				       <h5>한 명의 투수가 야수의 수비실책으로 인한 비자책 실점을 포함하여 단 한 점도 내주지 않고 경기를 끝내는 경우에 해당. 그 위의 레벨로 점수와 안타를 하나도 내주지 않고 이기는 것을 말하는 "노히트 노런"이 있음. 또 그 위의 레벨로 볼넷과 에러로 인한 출루를 포함하여 단 한 명의 타자에게도 출루를 허용하지 않고 경기를 끝내는 것을 "퍼펙트 게임"이라고 함.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right" >
+				    <h4>인필드 플라이</h4>
+				       <h5 data-filter="flase">내야 뜬공 상황 시 내야수가 보통 수비로 포구할 수 있는 상황에 주심이 선언하는 것.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>클린업 트리오</h4>
+				       <h5>3번, 4번, 5번 타자를 일컫는 말. 타선에서 가장 중요한 역할인 점수를 내는 능력을 겸비한 타자들.</h5>
+				</div><div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>키스톤 콤비</h4>
+				       <h5>2루수와 유격수</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>태그업</h4>
+				       <h5>타자가 외야 뜬공으로 아웃 됐을 경우에 수비수에게 공이 잡히자 마자 다음 베이스로 진루하는 행위.</h5>
+				</div>
+				<div data-role="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>테이블 세터</h4>
+				       <h5>1번, 2번 타자를 일컫는 말. 출루를 주 목적으로 하며 발이 빠른 타자들을 대부분 테이블 세터진에 구성. 클린업 트리오가 해결할 수 있도록 밥상을 차리는 역할.</h5>
+				</div>
+
+
+				<h3>고급 용어</h3>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>그린라이트</h4>
+				       <h5>주루센스가 있는 주자에게 코칭스탭의 지시 없이 도루할 수 있게 해주는 작전.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>런 앤드 히트(치고 달리기)</h4>
+				       <h5>주자의 진루를 목적으로 타자는 무조건 타격을 지시하고 주자는 무조건 뛰는 작전. 병살타를 막는 효과도 있음.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>사이클링 히트</h4>
+				       <h5>한 타자가 한 경기에서 1루타, 2루타, 3루타, 홈런을 모두 기록하는 것.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>스위치 히터</h4>
+				       <h5>좌타와 우타가 모두 가능한 타자.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>유틸리티 플레이어</h4>
+				       <h5>여러 포지션을 소화할 수 있는 선수.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>퀄리티 스타트</h4>
+				       <h5>선발투수가 6이닝 3자책점 이하로 막은 경우. 줄여서 QS라고 하며, 7이닝을 3자책 이하로 막았을 경우는 퀄리티 스타트 플러스(QS+)라고 칭함.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>플래툰</h4>
+				       <h5>상대팀의 투수에 따라 타자를 선별적으로 기용하거나 혹은 반대로 타자에 따라 투수를 선별적으로 기용하는 작전.</h5>
+				</div>
+				<div data-role ="collapsible" data-mini="true" data-iconpos="right">
+				    <h4>페이크 번트 앤 슬래시</h4>
+				       <h5>타자가 번트를 치는 모션을 취하다가 공이 날라올때 정상타격폼으로 전환해 타격을 하는 기법.</h5>
+				</div>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+		<footer style="background-color:#FFFFFF;"data-role="footer">
+			<p style="text-align:center;"><strong><span style="color:#1266FF;">Made by </span> Hyeong-Uk</strong></p>
+		</footer>
+	</section>
+	</section>
+
+</body>
+</html>

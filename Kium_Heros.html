@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.external-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.icons-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.inline-svg-1.4.5.min.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.css">
+	<link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
+	
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="jquery.mobile-1.4.5.js"></script>
+	<style>
+		a:link {text-decoration:none}
+		a:visited {text-decoration:none}
+		a:hover {text-decoration:none}
+		table, th, td {
+		  font-size:11px;
+		}
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  padding-top: 100px; /* Location of the box */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 20px;
+		  border: 1px solid #888;
+		  width: 80%;
+		}
+
+		/* The Close Button */
+		.close {
+		  color: #aaaaaa;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #000;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<section data-role="page">
+		<a data-ajax='false' href="Main.html">
+		<header style="background-color:#99004C; color:white;" data-role="header">
+			<h1>키움 히어로즈</h1></header>
+		</a>
+		<div class="content" data-role="content">
+			<div class="ui-grid-b" style="text-align:center;">
+				<div class="ui-block-a" style=" width:30%;">
+					<img src="Heros.png" width="100%">
+				</div>
+				<div class="ui-block-b" style="width:70%">
+					<table style="width:100%">
+					  <tr style="background-color:#FFC6FF;">
+					    <th>창단</th>
+					    <td>2008년 3월 24일</td>
+					  </tr>
+					  <tr style="background-color:#EDEDED;">
+					    <th>홈구장</th>
+					    <td>고척 스카이돔</td>
+					  </tr>
+					  <tr style="background-color:#FFC6FF;">
+					    <th>감독</th>
+					    <td>손혁</td>
+					  </tr>
+					  <tr style="background-color:#EDEDED;">
+					    <th>주장</th>
+					    <td>김상수</td>
+					  </tr>
+					  <tr style="background-color:#FFC6FF;">
+					    <th>영구결번</th>
+					    <td>X</td>
+					  </tr>
+					  <tr style="background-color:#EDEDED;">
+					    <th>슬로건</th>
+					    <td>New Heros</td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+			<hr/>
+			<button id="myBtn" style="background-color:#EDEDED;">역대 우승 엠블렘</button>
+			<div id="myModal" class="modal">
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+			    <div class="content" data-role="content">
+			  	</div>
+			  </div>
+			</div>
+			<hr/>
+			<div>
+				<h4 style="text-align:center;">주간 기록(6월 3주)</h4>
+				<table style="width:100%">
+				  <tr style="background-color:#FFC6FF;">
+				    <th>승</th>
+				    <th>무</th> 
+				    <th>패</th>
+				    <th>방어율</th>
+				    <th>타율</th>
+				    <th>홈런</th>
+				    <th>주간순위</th>
+				  </tr>
+				  <tr style="background-color:#EDEDED; text-align:center;">
+				    <td>5</td>
+				    <td>0</td>
+				    <td>1</td>
+				    <td>2.29</td>
+				    <td>0.238</td>
+				    <td>6</td>
+				    <td>공동1위</td>
+				  </tr>
+				</table>
+			</div>
+			<div style="text-align:center;">
+				<h4 style="text-align:center;">팀 주간 MVP</h4>
+				<img src="Junghoo.jpg" width="20%">
+				<p style="font-size:13px;"><strong>이 정 후</strong></p>
+
+				<table style="width:100%">
+				  <tr style="background-color:#FFC6FF;">
+				    <th>타수</th>
+				    <th>안타</th> 
+				    <th>타율</th>
+				    <th>2루타</th>
+				    <th>3루타</th>
+				    <th>홈런</th>
+				  </tr>
+				  <tr style="background-color:#EDEDED; text-align:center;">
+				    <td>22</td>
+				    <td>11</td>
+				    <td>0.500</td>
+				    <td>4</td>
+				    <td>0</td>
+				    <td>1</td>
+				  </tr>
+				</table>
+			</div>
+			</div>
+
+		</div>
+	</section>
+</body>
+<script>
+	var modal = document.getElementById("myModal");
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	}
+</script>
+</html>
